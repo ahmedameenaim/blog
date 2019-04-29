@@ -43,6 +43,7 @@ nmap -sV -sC -sT Browny.lab
 
 ![nmap.PNG](/posts/images/nmap.PNG)
 
+
 <h3>we notice that there three  ports are open.</h3>
 we can access the machine via ssh protocol but we don't have any crediantials to able to access via ssh.
 so we can to  do http enumeration for finding any clues that lead us to access the machine through that way
